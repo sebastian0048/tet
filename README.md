@@ -179,7 +179,9 @@ Tool | | | | | |
 <img src="https://github.com/sebastian0048/tet/blob/main/erd.png" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
-    `Código en línea`
+    ```
+    var app = require('');
+    ```
 
 ##  Plantillas Bootstrap
     Se seleccionó la siguiente plantilla para el usuario final (No administrador).
