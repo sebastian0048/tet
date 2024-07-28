@@ -233,16 +233,16 @@ etc…
 
 #
 
-[license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
+<!-- [license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
 [license-file]: https://github.com/rescobedoq/pw2/blob/main/LICENSE
 
 [downloads]: https://img.shields.io/github/downloads/rescobedoq/pw2/total?label=Downloads
 [releases]: https://github.com/rescobedoq/pw2/releases/
 
-[last-commit]: https://img.shields.io/github/last-commit/rescobedoq/pw2?label=Last%20Commit
+[last-commit]: https://img.shields.io/github/last-commit/rescobedoq/pw2?label=Last%20Commit -->
 
-[Debian]: https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white
-[debian-site]: https://www.debian.org/index.es.html
+<!-- [Debian]: https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white
+[debian-site]: https://www.debian.org/index.es.html -->
 
 [Git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
 [git-site]: https://git-scm.com/
@@ -250,20 +250,20 @@ etc…
 [GitHub]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
 [github-site]: https://github.com/
 
-[Vim]: https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white
+<!-- [Vim]: https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white
 [vim-site]: https://www.vim.org/
 
 [Java]: https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white
-[java-site]: https://docs.oracle.com/javase/tutorial/
+[java-site]: https://docs.oracle.com/javase/tutorial/ -->
 
 
-[![Debian][Debian]][debian-site]
+<!-- [![Debian][Debian]][debian-site] -->
 [![Git][Git]][git-site]
 [![GitHub][GitHub]][github-site]
-[![Vim][Vim]][vim-site]
-[![Java][Java]][java-site]
+<!-- [![Vim][Vim]][vim-site]
+[![Java][Java]][java-site] -->
 
 
-[![License][license]][license-file]
+<!-- [![License][license]][license-file]
 [![Downloads][downloads]][releases]
-[![Last Commit][last-commit]][releases]
+[![Last Commit][last-commit]][releases] -->
