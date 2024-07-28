@@ -194,7 +194,19 @@ Crear tu app dentro del proyecto
 ```bash
 django-admin startapp <your-name-app>
 ```
+Agregar la app dentro de las configuraciones del proyecto
 
+```python
+INSTALLED_APPS = [
+    ...
+    'almacen',
+]
+```
+Crear y aplicar las migraciones  
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 ##  Plantillas Bootstrap
     Se seleccionó la siguiente plantilla para el usuario final (No administrador).
 
