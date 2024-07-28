@@ -213,73 +213,62 @@ python manage.py migrate
 
 
 
-##  CRUD - Core Business - Clientes finales
-    El núcleo de negocio del sistema de inscripciones tiene valor de aceptación para los cliente finales (alumnos) radica en realizar el proceso de inscripción propiamente, que empieza desde que:
-    1. El alumno inicia sesión.
-    2. El alumno selecciona el o los cursos donde desea realizar una inscripción.
-    3. El alumno selecciona el grupo de laboatorio donde desea incribirse.
-    4. El alumno puede tener la posibilidad de anular una incripción por varias razones: cambio de grupo, corregir error, etc.
-    5. El alumno puede ver el consolidado de sus inscripciones.
-    6. El alumno cierra sesión.
-
-    Todas y cada una de estas pantallas debe funcionar en la plantilla bootstrap.
-    A continuación se muestran las actividades realizadas para su construcción:
-    ...
 
 ## CRUD - Core Business - Gestión de EPP
 El núcleo de negocio del sistema de gestión de Equipos de Protección Personal (EPP) tiene valor de aceptación para los usuarios finales (trabajadores y administradores) y radica en realizar el proceso de gestión de EPP de manera eficiente, que comienza desde que:
 
-- El administrador inicia sesión:
-
+1. El administrador inicia sesión:
 - El administrador debe autenticarse en el sistema utilizando sus credenciales para acceder a la plataforma de gestión.
-- El administrador añade nuevos EPPs al inventario:
 
+2. El administrador añade nuevos EPPs al inventario:
 - El administrador puede añadir nuevos equipos de protección personal al inventario del sistema, especificando atributos como el nombre, cantidad, costo unitario, costo total, número de guía, etc.
-El administrador registra trabajadores:
 
+3. El administrador registra trabajadores:
 - El administrador puede registrar nuevos trabajadores en el sistema, proporcionando información como DNI, nombre, apellidos, cargo, fecha de contrato, y estado (activo/inactivo).
-- El administrador realiza préstamos de EPPs a los trabajadores:
 
+4. El administrador realiza préstamos de EPPs a los trabajadores:
 - El administrador puede registrar el préstamo de EPPs a los trabajadores, especificando detalles como el trabajador, el EPP prestado, la fecha de préstamo, la fecha de devolución, el nombre del responsable y una descripción del préstamo.
-- El administrador puede actualizar el inventario de EPPs:
 
+5. El administrador puede actualizar el inventario de EPPs:
 - El administrador puede modificar la información de los EPPs existentes en el inventario, ajustando la cantidad, el costo, el número de guía y otros atributos según sea necesario.
-- El administrador anula préstamos de EPPs:
 
+6. El administrador anula préstamos de EPPs:
 - El administrador tiene la posibilidad de anular un préstamo de EPP por diversas razones, como cambio de trabajador, corrección de errores, etc.
-- El administrador puede ver el consolidado de los préstamos y el inventario de EPPs:
 
+7. El administrador puede ver el consolidado de los préstamos y el inventario de EPPs:
 - El administrador puede acceder a una vista consolidada de todos los préstamos realizados, así como del inventario actual de EPPs, lo que le permite una gestión eficiente y controlada del stock.
-- El administrador cierra sesión:
 
-Una vez finalizadas las tareas de gestión, el administrador cierra sesión para asegurar la privacidad y seguridad de la información.
-Pantallas y Actividades Realizadas para su Construcción
+8. El administrador cierra sesión:
+- Una vez finalizadas las tareas de gestión, el administrador cierra sesión para asegurar la privacidad y seguridad de la información.
+
+## Pantallas y Actividades Realizadas para su Construcción
+
 A continuación, se muestran las actividades realizadas para la construcción de cada una de estas pantallas:
 
-- Inicio de Sesión del Administrador:
+1. Inicio de Sesión del Administrador:
+- Se implementó una pantalla de inicio de sesión utilizando formularios de autenticación de Django, permitiendo a los administradores acceder al sistema de gestión de EPPs.
 
-Se implementó una pantalla de inicio de sesión utilizando formularios de autenticación de Django, permitiendo a los administradores acceder al sistema de gestión de EPPs.
-Pantalla de Añadir Nuevos EPPs:
-
+2. Pantalla de Añadir Nuevos EPPs:
 - Se creó un formulario de entrada para registrar nuevos EPPs en el sistema. Este formulario incluye campos para todos los atributos necesarios, como nombre, cantidad, costo unitario, costo total, número de guía, etc.
-Pantalla de Registro de Trabajadores:
 
+3. Pantalla de Registro de Trabajadores:
 - Se desarrolló un formulario para el registro de nuevos trabajadores, con campos para DNI, nombre, apellidos, cargo, fecha de contrato y estado. Este formulario permite añadir nuevos trabajadores al sistema de manera sencilla.
-Pantalla de Préstamos de EPPs:
 
+4. Pantalla de Préstamos de EPPs:
 - Se implementó una pantalla que permite al administrador registrar préstamos de EPPs a los trabajadores. Esta pantalla incluye un formulario para seleccionar el trabajador, el EPP prestado, la fecha de préstamo, la fecha de devolución, el responsable y una descripción del préstamo.
-Pantalla de Actualización del Inventario de EPPs:
 
+5. Pantalla de Actualización del Inventario de EPPs:
 - Se desarrolló una pantalla que permite al administrador actualizar la información de los EPPs en el inventario. Este formulario permite modificar atributos como la cantidad, el costo y otros detalles relevantes.
-Pantalla de Anulación de Préstamos:
 
+6. Pantalla de Anulación de Préstamos:
 - Se creó una funcionalidad que permite al administrador anular préstamos de EPPs, proporcionando una interfaz sencilla para seleccionar el préstamo y registrar la anulación con las razones correspondientes.
-Vista Consolidada del Inventario y Préstamos:
 
+7. Vista Consolidada del Inventario y Préstamos:
 - Se implementó una vista consolidada que muestra todos los préstamos realizados y el inventario actual de EPPs. Esta vista permite al administrador obtener una visión general y detallada de la gestión de EPPs.
-Cierre de Sesión del Administrador:
 
+8. Cierre de Sesión del Administrador:
 - Se añadió una funcionalidad de cierre de sesión que permite al administrador salir del sistema de manera segura, garantizando la protección de la información.
+
 Con estas funcionalidades, el sistema de gestión de EPP proporciona una solución completa y eficiente para la administración y control de los equipos de protección personal en un entorno laboral.
 
 
