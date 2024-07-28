@@ -183,30 +183,35 @@ Instalar Django
 ```bash
 pip install django
 ```
-Crear el proyecto Django
 
+Crear el proyecto Django
 ```bash
 django-admin startproject <your-name-project>
 cd <your-name-project>
 ```
-Crear tu app dentro del proyecto
 
+Crear tu app dentro del proyecto
 ```bash
 django-admin startapp <your-name-app>
 ```
-Agregar la app dentro de las configuraciones del proyecto
 
-```python
+Agregar la app dentro de las configuraciones del proyecto
+```
 INSTALLED_APPS = [
     ...
-    'almacen',
+    '<your-name-app>',
 ]
 ```
+
 Crear y aplicar las migraciones  
-```bash
+```
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+
+
+
 ##  Plantillas Bootstrap
     Se seleccionó la siguiente plantilla para el usuario final (No administrador).
 
