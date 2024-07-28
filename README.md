@@ -154,9 +154,8 @@ guideNumber	Entero	No	No	0	Número de Guía
 | position | Cadena | No | No | Ninguno | Cargo
 | contractDate | Fecha | No | No | timezone.now | Fecha de Contrato
 | name | Cadena | No | No | Ninguno | Nombres
-| surname	Cadena | No | 	No | Ninguno | Apellidos
+| surname | Cadena | No | 	No | Ninguno | Apellidos
 | workerStatus | Bool | No | No | True | Estado (Activo/Inactivo) |
-...
 
 | Teacher | | | | | |
 | -- | -- | -- | -- | -- | -- |
