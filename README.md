@@ -64,8 +64,14 @@
 [![Vim][Vim]][vim-site]
 [![Java][Java]][java-site] -->
 
+
+
 ##  Tipo de Sistema
-    Se trata de una aplicación web construida con el framework Django 5, que permita el manejo y control de un almacen de Epp
+    Se trata de una aplicación web construida con el framework Django 5, que permita el 
+    manejo y control de un almacen de Epp
+
+## Objetivos
+    Desarrollar una aplicación web utilizando Django 5.0 para la gestión de equipos, herramientas, materiales, equipo de protección personal (EPP), préstamos de EPP y trabajadores en un entorno de almacén o inventario.
 
 ##  Requisitos del sistema
     El sistema debe satisfacer los siguientes requisitos funcionales y no funcionales:
@@ -115,7 +121,7 @@
 
 |Material  | | | | | |
 | -- | -- | -- | -- | -- | -- |
-| Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
+| Atributo  | Tipo  | Nulo  | Clave  | Predeterminado | Descripción
 | idMaterial  | Cadena  | No  | Sí  | Ninguno  | ID
 | name  | Cadena  | No  | No  | Ninguno  | Nombre
 | quantity  | Entero  | No  | No  | 0  | Cantidad
@@ -169,7 +175,8 @@ Tool | | | | | |
 
 
 ##  Diagrama Entidad-Relación
-    ...
+
+<img src="https://www.dropbox.com/scl/fi/xq28jc4hqxt7y3aj0t6s3/erd.png?rlkey=fvquh9wg6amgpezgdix33s72f&st=n1zswdud&dl=0" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
     Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
