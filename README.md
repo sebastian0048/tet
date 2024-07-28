@@ -179,10 +179,20 @@ Tool | | | | | |
 <img src="https://github.com/sebastian0048/tet/blob/main/erd.png" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
-    
+    - Instalar Django
 ```bash
+pip install django
+```
+    - Crear el proyecto Django
 
-django-admin startprject <your-name-project>
+```bash
+django-admin startproject <your-name-project>
+cd <your-name-project>
+```
+    - Crear tu app dentro del proyecto
+
+```bash
+django-admin startapp <your-name-app>
 ```
 
 ##  Plantillas Bootstrap
