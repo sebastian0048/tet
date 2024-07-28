@@ -80,8 +80,12 @@
 
     -   Equipment: Esta entidad representa equipos de protección personal (EPP) en un sistema de gestión de almacén, almacenando información como identificador único, nombre, cantidad, nivel de importancia, stock y número de guía. Además, valida datos y genera identificadores automáticamente.
     -   Loan: Esta entidad representa un préstamo de materiales, herramientas, o equipos de protección personal (EPP) a un trabajador dentro del sistema de gestión de almacén, almacenando información como el trabajador asociado, el código de orden de trabajo, las fechas de préstamo y devolución, y el estado del préstamo.
+    -   Material: Esta entidad representa un tipo de material disponible en el almacén, almacenando información como el ID del material, el nombre, la cantidad, el stock, el número de guía y la unidad de medida.
+    -   Ppe: Esta entidad representa un tipo de equipo de protección personal (EPP) disponible en el almacén, almacenando información como el ID del EPP, el nombre, la cantidad, el costo unitario, el costo total, el número de guía, el stock, la unidad de medida y una imagen opcional del EPP.
+    -   PpeLoan: Esta entidad representa el préstamo de un equipo de protección personal (EPP) a un trabajador, registrando información sobre el trabajador que recibe el préstamo, el EPP prestado, las fechas de entrega, el responsable del préstamo y una descripción del préstamo.
+    -   Tool: Esta entidad representa herramientas disponibles en un almacén, registrando información sobre el ID, nombre, cantidad, nivel de importancia, stock y número de guía.
+    -   Worker: Esta entidad representa a los trabajadores del almacén, registrando información sobre su DNI, cargo, fecha de contrato, nombre, apellido y estado (activo/inactivo).
 
-    ...
 
 ##  Diccionario de datos
 
