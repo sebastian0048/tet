@@ -179,9 +179,13 @@ Tool | | | | | |
 <img src="https://github.com/sebastian0048/tet/blob/main/erd.png" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
-    ```
-    var app = require('');
-    ```
+    ```python
+    # Este es un bloque de código en Python
+    def saludo(nombre):
+        return f"Hola, {nombre}"
+
+    print(saludo("Mundo"))
+
 
 ##  Plantillas Bootstrap
     Se seleccionó la siguiente plantilla para el usuario final (No administrador).
