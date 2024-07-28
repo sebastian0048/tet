@@ -176,7 +176,7 @@ Tool | | | | | |
 
 ##  Diagrama Entidad-Relación
 
-<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:80%; height:auto"/>
+<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto"/>
 
 ##  Administración con Django
 Instalar Django
