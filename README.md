@@ -91,11 +91,69 @@
 
     En la construcción de software y en el diccionario de datos sobre todo se recomienda y se utilizará el idioma inglés para especificar objetos, atributos, etc.
 
-| Course | | | | | |
-| -- | -- | -- | -- | -- | -- |
-| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
-| code  | Numerico| No | Si | Ninguno | Código |
-| name  | Cadena| No | No | Ninguno | Nombre |
+Equipment
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idEquipment	Cadena	No	Sí	Ninguno	ID
+name	Cadena	No	No	Ninguno	Nombre
+quantity	Entero	No	No	0	Cantidad
+level	Entero	No	No	-1	Nivel
+stock	Entero	No	No	0	Stock
+guideNumber	Entero	No	No	0	Número de Guía
+Loan
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idLoan	Auto	No	Sí	Ninguno	ID de Préstamo
+worker	FK	Sí	No	Ninguno	Trabajador
+material	FK	Sí	No	Ninguno	Material
+tool	FK	Sí	No	Ninguno	Herramienta
+equipment	FK	Sí	No	Ninguno	Equipo
+workOrderCode	Entero	No	No	0	Código de Órden de Trabajo
+loanDate	Fecha	No	No	timezone.now	Fecha de Entrega
+returnLoanDate	Fecha	No	No	timezone.now	Fecha de Devolución
+loanStatus	Bool	No	No	False	Estado del Préstamo
+Material
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idMaterial	Cadena	No	Sí	Ninguno	ID
+name	Cadena	No	No	Ninguno	Nombre
+quantity	Entero	No	No	0	Cantidad
+stock	Entero	No	No	0	Stock
+guideNumber	Entero	No	No	0	Número de Guía
+unit	Cadena	No	No	''	Unidad
+Ppe
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idPpe	Cadena	No	Sí	Ninguno	ID
+name	Cadena	No	No	Ninguno	Nombre
+quantity	Entero	No	No	0	Cantidad
+unitCost	Decimal	No	No	0.0	Costo Unitario
+totalCost	Decimal	No	No	0.0	Costo Total
+guideNumber	Entero	No	No	0	Número de Guía
+stock	Entero	No	No	0	Stock
+unit	Cadena	No	No	''	Unidad
+image	Imagen	Sí	No	Ninguno	Imagen
+PpeLoan
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idPpeLoan	Auto	No	Sí	Ninguno	ID de Préstamo de EPP
+worker	FK	Sí	No	Ninguno	Trabajador
+ppe	FK	Sí	No	Ninguno	Equipo de Protección Personal
+loanDate	Fecha	No	No	timezone.now	Fecha de Entrega
+newLoanDate	Fecha	No	No	timezone.now	Fecha de Nueva Entrega
+manager	Cadena	No	No	Ninguno	Nombre del Responsable
+description	Texto	No	No	'Es su primera entrega.'	Descripción
+Tool
+Atributo	Tipo	Nulo	Clave	Predeterminado	Descripción
+idTool	Cadena	No	Sí	Ninguno	ID
+name	Cadena	No	No	Ninguno	Nombre
+quantity	Entero	No	No	0	Cantidad
+level	Entero	No	No	-1	Nivel
+stock	Entero	No	No	0	Stock
+guideNumber	Entero	No	No	0	Número de Guía
+Worker
+Atributo | Tipo | Nulo | Clave | Predeterminado | Descripción
+dni	Entero | No | Sí | Ninguno | DNI
+position | Cadena | No | No | Ninguno | Cargo
+contractDate | Fecha | No | No | timezone.now | Fecha de Contrato
+name | Cadena | No | No | Ninguno | Nombres
+surname	Cadena | No | 	No | Ninguno | Apellidos
+workerStatus | Bool | No | No | True | Estado (Activo/Inactivo) |
 ...
 
 | Teacher | | | | | |
