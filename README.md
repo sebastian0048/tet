@@ -146,14 +146,16 @@ quantity	Entero	No	No	0	Cantidad
 level	Entero	No	No	-1	Nivel
 stock	Entero	No	No	0	Stock
 guideNumber	Entero	No	No	0	Número de Guía
-Worker
-Atributo | Tipo | Nulo | Clave | Predeterminado | Descripción
-dni	Entero | No | Sí | Ninguno | DNI
-position | Cadena | No | No | Ninguno | Cargo
-contractDate | Fecha | No | No | timezone.now | Fecha de Contrato
-name | Cadena | No | No | Ninguno | Nombres
-surname	Cadena | No | 	No | Ninguno | Apellidos
-workerStatus | Bool | No | No | True | Estado (Activo/Inactivo) |
+
+| Worker | | | | | |
+| -- | -- | -- | -- | -- | -- |
+| Atributo | Tipo | Nulo | Clave | Predeterminado | Descripción
+| dni	Entero | No | Sí | Ninguno | DNI
+| position | Cadena | No | No | Ninguno | Cargo
+| contractDate | Fecha | No | No | timezone.now | Fecha de Contrato
+| name | Cadena | No | No | Ninguno | Nombres
+| surname	Cadena | No | 	No | Ninguno | Apellidos
+| workerStatus | Bool | No | No | True | Estado (Activo/Inactivo) |
 ...
 
 | Teacher | | | | | |
