@@ -78,9 +78,7 @@
 ##  Modelo de datos
     El modelo de datos esta conformado por las siguientes entidades.
 
-    -   Equiment: Esta entidad representa los equipos de protección personal (EPP) dentro del sistema de gestión de almacén. 
-    Esta entidad almacena información clave sobre cada equipo, incluyendo su identificador único, nombre, cantidad disponible, nivel de importancia, stock actual y número de guía asociado. Además, 
-    la entidad garantiza la validación de los datos, asegurando que los niveles de importancia sean seleccionados correctamente y que los identificadores se generen automáticamente con un formato específico.
+    -   Equiment: Esta entidad representa equipos de protección personal (EPP) en un sistema de gestión de almacén, almacenando información como identificador único, nombre, cantidad, nivel de importancia, stock y número de guía. Además, valida datos y genera identificadores automáticamente.
     -   Profesor : En esta entidad se almacena los datos de los profesores que se responsabilizan del avance académico en la enseñanza de los temas planificados en cada curso. Ejemplo: Richart Escobedo, rescobedoq@unsa.edu.pe, Magister, etc.
 
     ...
