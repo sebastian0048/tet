@@ -176,7 +176,7 @@ Tool | | | | | |
 
 ##  Diagrama Entidad-Relación
 
-<img src="https://www.dropbox.com/scl/fi/xq28jc4hqxt7y3aj0t6s3/erd.png?rlkey=fvquh9wg6amgpezgdix33s72f&st=n1zswdud&dl=0" alt="" style="width:80%; height:auto"/>
+<img src="https://github.com/sebastian0048/tet/blob/main/erd.png" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
     Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
