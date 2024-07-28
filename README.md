@@ -180,12 +180,9 @@ Tool | | | | | |
 
 ##  Administración con Django
     
-```python
+```bash
 
-def saludo(nombre):
-    return f"Hola, {nombre}"
-
-print(saludo("Mundo"))
+django-admin startprject <your-name-project>
 ```
 
 ##  Plantillas Bootstrap
