@@ -133,7 +133,7 @@
 | totalCost  | Decimal  | No  | No  | 0.0  | Costo Total
 | guideNumber  | Entero  | No  | No  | 0  | Número de Guía
 | stock  | Entero  | No  | No  | 0  | Stock
-| unit  | Cadena  | No  | No  | ''  | Unidad
+| unit  | Cadena  | No  | No  | Ninguno  | Unidad
 | image  | Imagen  | Sí  | No  | Ninguno  | Imagen
 
 | PpeLoan | | | | | |
