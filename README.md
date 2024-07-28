@@ -168,14 +168,6 @@ Tool | | | | | |
 | surname | Cadena | No |   | No | Ninguno | Apellidos |
 | workerStatus | Bool | No | No | True | Estado (Activo/Inactivo) |
 
-| Teacher | | | | | |
-| -- | -- | -- | -- | -- | -- |
-| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
-| code  | Numerico| No | Si | Ninguno | Código |
-| name | Cadena| No | No | Ninguno | Nombres |
-| email | Cadena| No | No | Ninguno | Correo electrónico |
-| gender | Fecha| Si | No | NULL | Fecha de nacimiento |
-...
 
 ##  Diagrama Entidad-Relación
     ...
