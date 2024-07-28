@@ -179,8 +179,7 @@ Tool | | | | | |
 <img src="https://github.com/sebastian0048/tet/blob/main/erd.png" alt="" style="width:80%; height:auto"/>
 
 ##  Administración con Django
-    Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
-    ...
+    `Código en línea`
 
 ##  Plantillas Bootstrap
     Se seleccionó la siguiente plantilla para el usuario final (No administrador).
