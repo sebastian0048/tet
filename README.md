@@ -91,7 +91,7 @@
 
     En la construcción de software y en el diccionario de datos sobre todo se recomienda y se utilizará el idioma inglés para especificar objetos, atributos, etc.
 
-Equipment
+| Equipment | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
 | idEquipment  | Cadena  | No  | Sí  | Ninguno  | ID
@@ -101,7 +101,7 @@ Equipment
 | stock  | Entero  | No  | No  | 0  | Stock
 | guideNumber  | Entero  | No  | No  | 0  | Número de Guía
 
-Loan
+| Loan | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
 | idLoan  | Auto  | No  | Sí  | Ninguno  | ID de Préstamo
@@ -114,7 +114,7 @@ Loan
 | returnLoanDate  | Fecha  | No  | No  | timezone.now  | Fecha de Devolución
 | loanStatus  | Bool  | No  | No  | False  | Estado del Préstamo
 
-Material
+|Material  | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
 | idMaterial  | Cadena  | No  | Sí  | Ninguno  | ID
@@ -124,7 +124,7 @@ Material
 | guideNumber  | Entero  | No  | No  | 0  | Número de Guía
 | unit  | Cadena  | No  | No  | ''  | Unidad
 
-Ppe
+| Ppe | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
 | idPpe  | Cadena  | No  | Sí  | Ninguno  | ID
@@ -137,7 +137,7 @@ Ppe
 | unit  | Cadena  | No  | No  | ''  | Unidad
 | image  | Imagen  | Sí  | No  | Ninguno  | Imagen
 
-PpeLoan
+| PpeLoan | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo  | Tipo  | Nulo  | Clave  | Predeterminado  | Descripción
 | idPpeLoan  | Auto  | No  | Sí  | Ninguno  | ID de Préstamo de EPP
@@ -148,7 +148,7 @@ PpeLoan
 | manager  | Cadena  | No  | No  | Ninguno  | Nombre del Responsable
 | description  | Texto  | No  | No  | 'Es su primera entrega.'  | Descripción
 
-Tool
+Tool | | | | | |
 | -- | -- | -- | -- | -- | -- |
 | Atributo | Tipo |   | Nulo  | Clave  | Predeterminado  | | Descripción
 | iDTool  | Cadena  | No  | Sí  | Ninguno  | ID
