@@ -16,7 +16,7 @@
         <td colspan="2"><span style="font-weight:bold;">Proyecto web</span>: Desarrollo de una aplicación web para control y manejo de Epp en almacen</td>
         </tr>
         <tr>
-        <td colspan="2"><span style="font-weight:bold;">Fecha</span>:  2024/07/24</td>
+        <td colspan="2"><span style="font-weight:bold;">Fecha</span>:  2024/07/28</td>
         </tr>
     </tbody>
 </table>

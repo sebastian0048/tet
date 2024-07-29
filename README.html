@@ -1,0 +1,762 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Asus\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<div align="center">
+<theader>
+        </theader><table>
+    <tbody><tr>
+            <td style="width:25%;"><img src="https://github.com/rescobedoq/pw2/blob/main/epis.png?raw=true" alt="EPIS" style="width:80%; height:auto"></td>
+            <td>
+                <span style="font-weight:bold;">UNIVERSIDAD NACIONAL DE SAN AGUSTIN</span><br>
+                <span style="font-weight:bold;">FACULTAD DE INGENIERÍA DE PRODUCCIÓN Y SERVICIOS</span><br>
+                <span style="font-weight:bold;">DEPARTAMENTO ACADÉMICO DE INGENIERÍA DE SISTEMAS E INFORMÁTICA</span><br>
+                <span style="font-weight:bold;">ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS</span>
+            </td>            
+        </tr>
+    
+    </tbody><tbody>
+        <tr>
+        <td colspan="2"><span style="font-weight:bold;">Proyecto web</span>: Desarrollo de una aplicación web para control y manejo de Epp en almacen</td>
+        </tr>
+        <tr>
+        <td colspan="2"><span style="font-weight:bold;">Fecha</span>:  2024/07/28</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div align="center">
+<span style="font-weight:bold;">PROYECTO WEB</span><br>
+</div>
+<theader>
+</theader><table>
+<tbody><tr><th>INFORMACIÓN BÁSICA</th></tr>
+
+</tbody><tbody>
+    <tr>
+        <td>ASIGNATURA:</td><td>Programación Web 2</td>
+    </tr>
+    <tr>
+        <td>SEMESTRE:</td><td>III</td>
+    </tr>
+    <tr>
+        <td>FECHA INICIO:</td><td>15-Jul-2024</td><td>FECHA FIN:</td>
+        <td>28-Jul-2023</td><td>DURACIÓN:</td><td>04 horas</td>
+    </tr>
+    <tr>
+        <td colspan="3">DOCENTES:
+        <ul>
+        <li>Richart Smith Escobedo Quispe - rescobedoq@unsa.edu.pe</li>
+        </ul>
+        </td>
+    <!--<tr-->
+
+</tr></tbody></table>
+<h1 id="webapp-con-django">WebApp con Django </h1>
+<h2 id="tipo-de-sistema">Tipo de Sistema </h2>
+<p>Se trata de una aplicación web construida con el framework Django 5, que permita el<br>
+manejo y control de un almacen de Epp</p>
+<h2 id="objetivos">Objetivos </h2>
+<p>Desarrollar una aplicación web utilizando Django 5.0 para la gestión de equipos, herramientas, materiales, equipo de protección personal (EPP), préstamos de EPP y trabajadores en un entorno de almacén.</p>
+<h2 id="requisitos-del-sistema">Requisitos del sistema </h2>
+<p>El sistema debe satisfacer los siguientes requisitos funcionales y no funcionales:</p>
+<ul>
+<li>RQ01: El sistema debe permitir gestionar EPP, herramientas, materiales, equipos, préstamos y trabajadores.</li>
+<li>RQ02: El sistema debe proporcionar una interfaz de administración para gestionar los datos y realizar consultas.</li>
+<li>RQ03: El sistema debe permitir la generación de reportes sobre el estado de los EPP y los préstamos.</li>
+</ul>
+<h2 id="modelo-de-datos">Modelo de datos </h2>
+<p>El modelo de datos esta conformado por las siguientes entidades.</p>
+<ul>
+<li>Equipment: Esta entidad representa equipos de protección personal (EPP) en un sistema de gestión de almacén, almacenando información como identificador único, nombre, cantidad, nivel de importancia, stock y número de guía. Además, valida datos y genera identificadores automáticamente.</li>
+<li>Loan: Esta entidad representa un préstamo de materiales, herramientas, o equipos de protección personal (EPP) a un trabajador dentro del sistema de gestión de almacén, almacenando información como el trabajador asociado, el código de orden de trabajo, las fechas de préstamo y devolución, y el estado del préstamo.</li>
+<li>Material: Esta entidad representa un tipo de material disponible en el almacén, almacenando información como el ID del material, el nombre, la cantidad, el stock, el número de guía y la unidad de medida.</li>
+<li>Ppe: Esta entidad representa un tipo de equipo de protección personal (EPP) disponible en el almacén, almacenando información como el ID del EPP, el nombre, la cantidad, el costo unitario, el costo total, el número de guía, el stock, la unidad de medida y una imagen opcional del EPP.</li>
+<li>PpeLoan: Esta entidad representa el préstamo de un equipo de protección personal (EPP) a un trabajador, registrando información sobre el trabajador que recibe el préstamo, el EPP prestado, las fechas de entrega, el responsable del préstamo y una descripción del préstamo.</li>
+<li>Tool: Esta entidad representa herramientas disponibles en un almacén, registrando información sobre el ID, nombre, cantidad, nivel de importancia, stock y número de guía.</li>
+<li>Worker: Esta entidad representa a los trabajadores del almacén, registrando información sobre su DNI, cargo, fecha de contrato, nombre, apellido y estado (activo/inactivo).</li>
+</ul>
+<h2 id="diccionario-de-datos">Diccionario de datos </h2>
+<p>En la construcción de software y en el diccionario de datos sobre todo se recomienda y se utilizará el idioma inglés para especificar objetos, atributos, etc.</p>
+<table>
+<thead>
+<tr>
+<th>Equipment</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>idEquipment</td>
+<td>Cadena</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Cantidad</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>-1</td>
+<td>Nivel</td>
+</tr>
+<tr>
+<td>stock</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Stock</td>
+</tr>
+<tr>
+<td>guideNumber</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Número de Guía</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Loan</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>idLoan</td>
+<td>Auto</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID de Préstamo</td>
+</tr>
+<tr>
+<td>worker</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Trabajador</td>
+</tr>
+<tr>
+<td>material</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Material</td>
+</tr>
+<tr>
+<td>tool</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Herramienta</td>
+</tr>
+<tr>
+<td>equipment</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Equipo</td>
+</tr>
+<tr>
+<td>workOrderCode</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Código de Órden de Trabajo</td>
+</tr>
+<tr>
+<td>loanDate</td>
+<td>Fecha</td>
+<td>No</td>
+<td>No</td>
+<td>timezone.now</td>
+<td>Fecha de Entrega</td>
+</tr>
+<tr>
+<td>returnLoanDate</td>
+<td>Fecha</td>
+<td>No</td>
+<td>No</td>
+<td>timezone.now</td>
+<td>Fecha de Devolución</td>
+</tr>
+<tr>
+<td>loanStatus</td>
+<td>Bool</td>
+<td>No</td>
+<td>No</td>
+<td>False</td>
+<td>Estado del Préstamo</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>idMaterial</td>
+<td>Cadena</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Cantidad</td>
+</tr>
+<tr>
+<td>stock</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Stock</td>
+</tr>
+<tr>
+<td>guideNumber</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Número de Guía</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>''</td>
+<td>Unidad</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ppe</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>idPpe</td>
+<td>Cadena</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Cantidad</td>
+</tr>
+<tr>
+<td>unitCost</td>
+<td>Decimal</td>
+<td>No</td>
+<td>No</td>
+<td>0.0</td>
+<td>Costo Unitario</td>
+</tr>
+<tr>
+<td>totalCost</td>
+<td>Decimal</td>
+<td>No</td>
+<td>No</td>
+<td>0.0</td>
+<td>Costo Total</td>
+</tr>
+<tr>
+<td>guideNumber</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Número de Guía</td>
+</tr>
+<tr>
+<td>stock</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Stock</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Unidad</td>
+</tr>
+<tr>
+<td>image</td>
+<td>Imagen</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Imagen</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>PpeLoan</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>idPpeLoan</td>
+<td>Auto</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID de Préstamo de EPP</td>
+</tr>
+<tr>
+<td>worker</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Trabajador</td>
+</tr>
+<tr>
+<td>ppe</td>
+<td>FK</td>
+<td>Sí</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Equipo de Protección Personal</td>
+</tr>
+<tr>
+<td>loanDate</td>
+<td>Fecha</td>
+<td>No</td>
+<td>No</td>
+<td>timezone.now</td>
+<td>Fecha de Entrega</td>
+</tr>
+<tr>
+<td>newLoanDate</td>
+<td>Fecha</td>
+<td>No</td>
+<td>No</td>
+<td>timezone.now</td>
+<td>Fecha de Nueva Entrega</td>
+</tr>
+<tr>
+<td>manager</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombre del Responsable</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Texto</td>
+<td>No</td>
+<td>No</td>
+<td>'Es su primera entrega.'</td>
+<td>Descripción</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td></td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+</tr>
+<tr>
+<td>iDTool</td>
+<td>Cadena</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Cantidad</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>-1</td>
+<td>Nivel</td>
+</tr>
+<tr>
+<td>stock</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Stock</td>
+</tr>
+<tr>
+<td>guideNumber</td>
+<td>Entero</td>
+<td>No</td>
+<td>No</td>
+<td>0</td>
+<td>Número de Guía</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Worker</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atributo</td>
+<td>Tipo</td>
+<td>Nulo</td>
+<td>Clave</td>
+<td>Predeterminado</td>
+<td>Descripción</td>
+</tr>
+<tr>
+<td>dni</td>
+<td>Entero</td>
+<td>No</td>
+<td>Sí</td>
+<td>Ninguno</td>
+<td>DNI</td>
+</tr>
+<tr>
+<td>position</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Cargo</td>
+</tr>
+<tr>
+<td>contractDate</td>
+<td>Fecha</td>
+<td>No</td>
+<td>No</td>
+<td>timezone.now</td>
+<td>Fecha de Contrato</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Cadena</td>
+<td>No</td>
+<td>No</td>
+<td>Ninguno</td>
+<td>Nombres</td>
+</tr>
+<tr>
+<td>surname</td>
+<td>Cadena</td>
+<td>No</td>
+<td></td>
+<td>No</td>
+<td>Ninguno</td>
+</tr>
+<tr>
+<td>workerStatus</td>
+<td>Bool</td>
+<td>No</td>
+<td>No</td>
+<td>True</td>
+<td>Estado (Activo/Inactivo)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagrama-entidad-relación">Diagrama Entidad-Relación </h2>
+<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto">
+<h2 id="administración-con-django">Administración con Django </h2>
+<p>Instalar Django</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>pip <span class="token function">install</span> django
+</code></pre><p>Crear el proyecto Django</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>django-admin startproject <span class="token operator">&lt;</span>your-name-project<span class="token operator">&gt;</span>
+<span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>your-name-project<span class="token operator">&gt;</span>
+</code></pre><p>Crear tu app dentro del proyecto</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>django-admin startapp <span class="token operator">&lt;</span>your-name-app<span class="token operator">&gt;</span>
+</code></pre><p>Agregar la app dentro de las configuraciones del proyecto</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>INSTALLED_APPS <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token string">'&lt;your-name-app&gt;'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre><p>Crear y aplicar las migraciones</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre><h2 id="crud---core-business---gestión-de-epp">CRUD - Core Business - Gestión de EPP </h2>
+<p>El núcleo de negocio del sistema de gestión de Equipos de Protección Personal (EPP) tiene valor de aceptación para los usuarios finales (trabajadores y administradores) y radica en realizar el proceso de gestión de EPP de manera eficiente, que comienza desde que:</p>
+<ol>
+<li>El administrador inicia sesión:</li>
+</ol>
+<ul>
+<li>El administrador debe autenticarse en el sistema utilizando sus credenciales para acceder a la plataforma de gestión.</li>
+</ul>
+<ol start="2">
+<li>El administrador añade nuevos EPPs al inventario:</li>
+</ol>
+<ul>
+<li>El administrador puede añadir nuevos equipos de protección personal al inventario del sistema, especificando atributos como el nombre, cantidad, costo unitario, costo total, número de guía, etc.</li>
+</ul>
+<ol start="3">
+<li>El administrador registra trabajadores:</li>
+</ol>
+<ul>
+<li>El administrador puede registrar nuevos trabajadores en el sistema, proporcionando información como DNI, nombre, apellidos, cargo, fecha de contrato, y estado (activo/inactivo).</li>
+</ul>
+<ol start="4">
+<li>El administrador realiza préstamos de EPPs a los trabajadores:</li>
+</ol>
+<ul>
+<li>El administrador puede registrar el préstamo de EPPs a los trabajadores, especificando detalles como el trabajador, el EPP prestado, la fecha de préstamo, la fecha de devolución, el nombre del responsable y una descripción del préstamo.</li>
+</ul>
+<ol start="5">
+<li>El administrador puede actualizar el inventario de EPPs:</li>
+</ol>
+<ul>
+<li>El administrador puede modificar la información de los EPPs existentes en el inventario, ajustando la cantidad, el costo, el número de guía y otros atributos según sea necesario.</li>
+</ul>
+<ol start="6">
+<li>El administrador anula préstamos de EPPs:</li>
+</ol>
+<ul>
+<li>El administrador tiene la posibilidad de anular un préstamo de EPP por diversas razones, como cambio de trabajador, corrección de errores, etc.</li>
+</ul>
+<ol start="7">
+<li>El administrador puede ver el consolidado de los préstamos y el inventario de EPPs:</li>
+</ol>
+<ul>
+<li>El administrador puede acceder a una vista consolidada de todos los préstamos realizados, así como del inventario actual de EPPs, lo que le permite una gestión eficiente y controlada del stock.</li>
+</ul>
+<ol start="8">
+<li>El administrador cierra sesión:</li>
+</ol>
+<ul>
+<li>Una vez finalizadas las tareas de gestión, el administrador cierra sesión para asegurar la privacidad y seguridad de la información.</li>
+</ul>
+<h2 id="servicios-mediante-una-api-restful">Servicios mediante una API RESTful </h2>
+<p>Se ha creado una aplicación que pone a disposición cierta información para ser consumida por otros clientes HTTP. La API RESTful permite gestionar y consultar datos de los Equipos de Protección Personal (EPP), trabajadores y préstamos de EPP.</p>
+<ul>
+<li>
+<p>GET: Con el método GET se devolverá la lista de EPPs, trabajadores y préstamos registrados, permitiendo a los clientes ver esta información en cualquier otro medio. La información se entrega en formato JSON.</p>
+</li>
+<li>
+<p>POST: Con este método se enviará la información de nuevos EPPs, trabajadores o préstamos al sistema. Los datos enviados se almacenarán en la base de datos y se devolverá una confirmación de la operación en formato JSON.</p>
+</li>
+</ul>
+<h2>Consumiendo la API con Vue.js</h2>
+<p>Instalacion de Vue js</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> @vue/cli
+</code></pre><p>Visualizacion de la web</p>
+<ul>
+<li>
+<p>Principal<br>
+<img src="https://github.com/sebastian0048/tet/blob/main/home.jpeg?raw=true" alt="" style="width:100%; height:auto"></p>
+</li>
+<li>
+<p>Adminisrador<br>
+<img src="https://github.com/sebastian0048/tet/blob/main/administrator.jpeg?raw=true" alt="" style="width:100%; height:auto"></p>
+</li>
+<li>
+<p>Lista de trabajadores<br>
+<img src="https://github.com/sebastian0048/tet/blob/main/WorkersList.jpeg?raw=true" alt="" style="width:100%; height:auto"></p>
+</li>
+<li>
+<p>Consulta api</p>
+</li>
+</ul>
+<img src="https://github.com/sebastian0048/tet/blob/main/api.jpeg?raw=true" alt="" style="width:100%; height:auto">
+<p><a href="https://git-scm.com/"><img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="Git"></a><br>
+<a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"></a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
