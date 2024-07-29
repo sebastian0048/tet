@@ -272,9 +272,9 @@ A continuación, se muestran las actividades realizadas para la construcción de
 Con estas funcionalidades, el sistema de gestión de EPP proporciona una solución completa y eficiente para la administración y control de los equipos de protección personal en un entorno laboral.
 
 
-## Github del proyecto:
+<!-- ## Github del proyecto: -->
 
-Servicios mediante una API RESTful
+## Servicios mediante una API RESTful
 Se ha creado una aplicación que pone a disposición cierta información para ser consumida por otros clientes HTTP. La API RESTful permite gestionar y consultar datos de los Equipos de Protección Personal (EPP), trabajadores y préstamos de EPP.
 
 GET: Con el método GET se devolverá la lista de EPPs, trabajadores y préstamos registrados, permitiendo a los clientes ver esta información en cualquier otro medio. La información se entrega en formato JSON.
