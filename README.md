@@ -261,12 +261,16 @@ npm install -g @vue/cli
 Visualizacion de la web
 - Principal
 <img src="https://github.com/sebastian0048/tet/blob/main/home.jpeg?raw=true" alt="" style="width:100%; height:auto"/>
+
 - Adminisrador
 <img src="https://github.com/sebastian0048/tet/blob/main/administrator.jpeg?raw=true" alt="" style="width:100%; height:auto"/>
-<img src="https://github.com/sebastian0048/tet/blob/main/WorkersList.jpeg?raw=true" alt="" style="width:100%; height:auto"/>
+
 - Lista de trabajadores
+<img src="https://github.com/sebastian0048/tet/blob/main/WorkersList.jpeg?raw=true" alt="" style="width:100%; height:auto"/>
+
 
 - Consulta api
+
 <img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto"/>
 
 
