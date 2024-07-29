@@ -71,7 +71,7 @@ Se trata de una aplicación web construida con el framework Django 5, que permit
     manejo y control de un almacen de Epp
 
 ## Objetivos
-Desarrollar una aplicación web utilizando Django 5.0 para la gestión de equipos, herramientas, materiales, equipo de protección personal (EPP), préstamos de EPP y trabajadores en un entorno de almacén o inventario.
+Desarrollar una aplicación web utilizando Django 5.0 para la gestión de equipos, herramientas, materiales, equipo de protección personal (EPP), préstamos de EPP y trabajadores en un entorno de almacén.
 
 ##  Requisitos del sistema
 El sistema debe satisfacer los siguientes requisitos funcionales y no funcionales:
@@ -272,21 +272,16 @@ A continuación, se muestran las actividades realizadas para la construcción de
 Con estas funcionalidades, el sistema de gestión de EPP proporciona una solución completa y eficiente para la administración y control de los equipos de protección personal en un entorno laboral.
 
 
-Github del proyecto:
+## Github del proyecto:
 
-URL en Heroku:
+Servicios mediante una API RESTful
+Se ha creado una aplicación que pone a disposición cierta información para ser consumida por otros clientes HTTP. La API RESTful permite gestionar y consultar datos de los Equipos de Protección Personal (EPP), trabajadores y préstamos de EPP.
 
-URL Playlist YouTube.
-Producción de un PlayList en Youtube explicando cada una de los requerimientos.
-Video 01 - Sistema - Requisitos.
-Video 02 - Modelo de datos - DD - DER.
-etc…
+GET: Con el método GET se devolverá la lista de EPPs, trabajadores y préstamos registrados, permitiendo a los clientes ver esta información en cualquier otro medio. La información se entrega en formato JSON.
+
+POST: Con este método se enviará la información de nuevos EPPs, trabajadores o préstamos al sistema. Los datos enviados se almacenarán en la base de datos y se devolverá una confirmación de la operación en formato JSON.
 
 
-## REFERENCIAS
--   
-
-#
 
 <!-- [license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
 [license-file]: https://github.com/rescobedoq/pw2/blob/main/LICENSE
