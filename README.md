@@ -241,35 +241,6 @@ El núcleo de negocio del sistema de gestión de Equipos de Protección Personal
 8. El administrador cierra sesión:
 - Una vez finalizadas las tareas de gestión, el administrador cierra sesión para asegurar la privacidad y seguridad de la información.
 
-## Pantallas y Actividades Realizadas para su Construcción
-
-A continuación, se muestran las actividades realizadas para la construcción de cada una de estas pantallas:
-
-1. Inicio de Sesión del Administrador:
-- Se implementó una pantalla de inicio de sesión utilizando formularios de autenticación de Django, permitiendo a los administradores acceder al sistema de gestión de EPPs.
-
-2. Pantalla de Añadir Nuevos EPPs:
-- Se creó un formulario de entrada para registrar nuevos EPPs en el sistema. Este formulario incluye campos para todos los atributos necesarios, como nombre, cantidad, costo unitario, costo total, número de guía, etc.
-
-3. Pantalla de Registro de Trabajadores:
-- Se desarrolló un formulario para el registro de nuevos trabajadores, con campos para DNI, nombre, apellidos, cargo, fecha de contrato y estado. Este formulario permite añadir nuevos trabajadores al sistema de manera sencilla.
-
-4. Pantalla de Préstamos de EPPs:
-- Se implementó una pantalla que permite al administrador registrar préstamos de EPPs a los trabajadores. Esta pantalla incluye un formulario para seleccionar el trabajador, el EPP prestado, la fecha de préstamo, la fecha de devolución, el responsable y una descripción del préstamo.
-
-5. Pantalla de Actualización del Inventario de EPPs:
-- Se desarrolló una pantalla que permite al administrador actualizar la información de los EPPs en el inventario. Este formulario permite modificar atributos como la cantidad, el costo y otros detalles relevantes.
-
-6. Pantalla de Anulación de Préstamos:
-- Se creó una funcionalidad que permite al administrador anular préstamos de EPPs, proporcionando una interfaz sencilla para seleccionar el préstamo y registrar la anulación con las razones correspondientes.
-
-7. Vista Consolidada del Inventario y Préstamos:
-- Se implementó una vista consolidada que muestra todos los préstamos realizados y el inventario actual de EPPs. Esta vista permite al administrador obtener una visión general y detallada de la gestión de EPPs.
-
-8. Cierre de Sesión del Administrador:
-- Se añadió una funcionalidad de cierre de sesión que permite al administrador salir del sistema de manera segura, garantizando la protección de la información.
-
-Con estas funcionalidades, el sistema de gestión de EPP proporciona una solución completa y eficiente para la administración y control de los equipos de protección personal en un entorno laboral.
 
 
 <!-- ## Github del proyecto: -->
@@ -277,10 +248,21 @@ Con estas funcionalidades, el sistema de gestión de EPP proporciona una soluci�
 ## Servicios mediante una API RESTful
 Se ha creado una aplicación que pone a disposición cierta información para ser consumida por otros clientes HTTP. La API RESTful permite gestionar y consultar datos de los Equipos de Protección Personal (EPP), trabajadores y préstamos de EPP.
 
-GET: Con el método GET se devolverá la lista de EPPs, trabajadores y préstamos registrados, permitiendo a los clientes ver esta información en cualquier otro medio. La información se entrega en formato JSON.
+- GET: Con el método GET se devolverá la lista de EPPs, trabajadores y préstamos registrados, permitiendo a los clientes ver esta información en cualquier otro medio. La información se entrega en formato JSON.
 
-POST: Con este método se enviará la información de nuevos EPPs, trabajadores o préstamos al sistema. Los datos enviados se almacenarán en la base de datos y se devolverá una confirmación de la operación en formato JSON.
-
+- POST: Con este método se enviará la información de nuevos EPPs, trabajadores o préstamos al sistema. Los datos enviados se almacenarán en la base de datos y se devolverá una confirmación de la operación en formato JSON.
+ 
+ ## Consumiendo la API con Vue.js
+ Instalacion de Vue js
+ 
+```bash
+npm install -g @vue/cli
+```
+Visualizacion de la web
+- Principal
+<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto"/>
+- Adminisrador
+<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto"/>
 
 
 <!-- [license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
