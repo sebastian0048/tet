@@ -271,7 +271,7 @@ Visualizacion de la web
 
 - Consulta api
 
-<img src="https://github.com/sebastian0048/tet/blob/main/erd.png?raw=true" alt="" style="width:100%; height:auto"/>
+<img src="https://github.com/sebastian0048/tet/blob/main/api.jpeg?raw=true" alt="" style="width:100%; height:auto"/>
 
 
 <!-- [license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
